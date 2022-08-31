@@ -1,0 +1,148 @@
+@primary: #3bafda;
+@secondary: #6c757d;
+@success: #1abc9c;
+@info: #37cde6;
+@warning: #f7b84b;
+@danger: #f1556c;
+@dark: #323a46;
+@purple: #6559cc;
+@pink: #f672a7;
+@light: #f1f5f7;
+//light
+@primary-light: darken(@primary, -10%);
+@secondary-light: darken(@secondary, -10%);
+@success-light: darken(@success, -10%);
+@info-light: darken(@info, -10%);
+@warning-light: darken(@warning, -10%);
+@danger-light: darken(@danger, -10%);
+@dark-light: darken(@dark, -10%);
+@purple-light: darken(@purple, -10%);
+@pink-light: darken(@pink, -10%);
+@light-light: darken(@light, -10%);
+
+.j-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.group {
+  .j-spinner-grow {
+    margin-right: 2em;
+  }
+}
+
+.j-spinner {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid @primary;
+  border-bottom: 5px solid @primary;
+  border-right: 5px solid @primary;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  animation: spinner 2s linear infinite;
+
+  &.secondary {
+    border-top: 5px solid @secondary;
+    border-bottom: 5px solid @secondary;
+    border-right: 5px solid @secondary;
+  }
+  &.success {
+    border-top: 5px solid @success;
+    border-bottom: 5px solid @success;
+    border-right: 5px solid @success;
+  }
+  &.danger {
+    border-top: 5px solid @danger;
+    border-bottom: 5px solid @danger;
+    border-right: 5px solid @danger;
+  }
+  &.warning {
+    border-top: 5px solid @warning;
+    border-bottom: 5px solid @warning;
+    border-right: 5px solid @warning;
+  }
+  &.info {
+    border-top: 5px solid @info;
+    border-bottom: 5px solid @info;
+    border-right: 5px solid @info;
+  }
+  &.light {
+    border: 5px solid white;
+    border-top: 5px solid @light;
+    border-bottom: 5px solid @light;
+    border-right: 5px solid @light;
+  }
+  &.dark {
+    border-top: 5px solid @dark;
+    border-bottom: 5px solid @dark;
+    border-right: 5px solid @dark;
+  }
+
+  &-grow {
+    background: @primary;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    animation: grow 0.6s ease-in-out alternate infinite;
+
+    &.primary {
+      background-color: @primary-light;
+      border-color: @primary-light;
+      color: white;
+    }
+    &.secondary {
+      background-color: @secondary-light;
+      border-color: @secondary-light;
+      color: white;
+    }
+    &.success {
+      background-color: @success-light;
+      border-color: @success-light;
+      color: white;
+    }
+    &.danger {
+      background-color: @danger-light;
+      border-color: @danger-light;
+      color: white;
+    }
+    &.warning {
+      background-color: @warning-light;
+      border-color: @warning-light;
+      color: white;
+    }
+    &.info {
+      background-color: @info-light;
+      border-color: @info-light;
+      color: white;
+    }
+    &.light {
+      background-color: @light;
+      border-color: @light;
+    }
+    &.dark {
+      background-color: @dark-light;
+      border-color: @dark-light;
+      color: white;
+    }
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes grow {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(2);
+    }
+  }
+}
