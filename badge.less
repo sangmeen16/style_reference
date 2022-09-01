@@ -1,0 +1,85 @@
+@primary: #3bafda;
+@secondary: #6c757d;
+@success: #1abc9c;
+@info: #37cde6;
+@warning: #f7b84b;
+@danger: #f1556c;
+@dark: #323a46;
+@purple: #6559cc;
+@pink: #f672a7;
+@light: #f1f5f7;
+
+@primary-light: darken(@primary, -10%);
+@secondary-light: darken(@secondary, -10%);
+@success-light: darken(@success, -10%);
+@info-light: darken(@info, -10%);
+@warning-light: darken(@warning, -10%);
+@danger-light: darken(@danger, -10%);
+@dark-light: darken(@dark, -10%);
+@purple-light: darken(@purple, -10%);
+@pink-light: darken(@pink, -10%);
+@light-light: darken(@light, -10%);
+
+.j-badge {
+  &-primary {
+    background-color: @primary-light;
+    border-color: @primary-light;
+    color: white;
+  }
+  &-secondary {
+    background-color: @secondary-light;
+    border-color: @secondary-light;
+    color: white;
+  }
+  &-success {
+    background-color: @success-light;
+    border-color: @success-light;
+    color: white;
+  }
+  &-danger {
+    background-color: @danger-light;
+    border-color: @danger-light;
+    color: white;
+  }
+  &-warning {
+    background-color: @warning-light;
+    border-color: @warning-light;
+    color: white;
+  }
+  &-info {
+    background-color: @info-light;
+    border-color: @info-light;
+    color: white;
+  }
+  &-light {
+    background-color: @light;
+    border-color: @light;
+  }
+  &-dark {
+    background-color: @dark-light;
+    border-color: @dark-light;
+    color: white;
+  }
+
+  color: white;
+  background: @primary;
+  border-radius: 50%;
+  padding: 0.1em 0.8em;
+  text-align: center;
+
+  &.text {
+    padding: 0.1em 0.7em 0.3em 0.7em;
+  }
+
+  &.top {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    padding: 0.2em 0.7em 0.3em 0.7em;
+  }
+
+  &.bubble {
+    border-radius: 20px;
+    padding: 0.5em 0.7em;
+  }
+}
