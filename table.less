@@ -1,0 +1,71 @@
+@primary: #3bafda;
+@secondary: #6c757d;
+@success: #1abc9c;
+@info: #37cde6;
+@warning: #f7b84b;
+@danger: #f1556c;
+@dark: #323a46;
+@purple: #6559cc;
+@pink: #f672a7;
+@light: #f1f5f7;
+//light
+@primary-light: darken(@primary, -10%);
+@secondary-light: darken(@secondary, -10%);
+@success-light: darken(@success, -10%);
+@info-light: darken(@info, -10%);
+@warning-light: darken(@warning, -10%);
+@danger-light: darken(@danger, -10%);
+@dark-light: darken(@dark, -10%);
+@purple-light: darken(@purple, -10%);
+@pink-light: darken(@pink, -10%);
+@light-light: darken(@light, -10%);
+
+.j-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.j-table {
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  text-align: left;
+
+  thead {
+    background: @primary-light;
+  }
+
+  &.stripe {
+    tbody tr {
+      &:nth-child(even) {
+        background: @light;
+      }
+      &:nth-child(odd) {
+        background: white;
+      }
+    }
+  }
+
+  &.hover {
+    tr:hover {
+      th,
+      td {
+        background: @secondary;
+        color: white;
+      }
+    }
+  }
+  &.center {
+    text-align: center;
+  }
+
+  &.border-none {
+    border: none;
+    th,
+    td {
+      border: none;
+    }
+  }
+}
