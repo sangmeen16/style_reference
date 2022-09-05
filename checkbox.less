@@ -1,0 +1,48 @@
+@primary: #3bafda;
+@secondary: #6c757d;
+@success: #1abc9c;
+@info: #37cde6;
+@warning: #f7b84b;
+@danger: #f1556c;
+@dark: #323a46;
+@purple: #6559cc;
+@pink: #f672a7;
+@light: #f1f5f7;
+
+.j-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.j-checkbox {
+  position: relative;
+  display: flex;
+
+  &.col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0.2em 0.4em;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 1.5em;
+      height: 1.5em;
+      border: 1px solid #ccc;
+
+      &:checked {
+        accent-color: @primary;
+      }
+
+      &:hover {
+        box-shadow: 0 0 0 1px #ccc;
+      }
+    }
+  }
+}
