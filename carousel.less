@@ -12,7 +12,7 @@
 @transition-fast: all 0.1s;
 @transition-slow: all 1s;
 
-.j-carousel {
+.j-Xcarousel {
   position: relative;
   overflow: hidden;
 
@@ -48,9 +48,9 @@
     right: 2%;
   }
   &:hover {
-    #carousel-1:checked ~ .control-1,
-    #carousel-2:checked ~ .control-2,
-    #carousel-3:checked ~ .control-3 {
+    #Xcarousel-1:checked ~ .control-1,
+    #Xcarousel-2:checked ~ .control-2,
+    #Xcarousel-3:checked ~ .control-3 {
       display: block;
     }
   }
@@ -79,9 +79,9 @@
     height: 0.5rem;
   }
 
-  #carousel-1:checked ~ .indicator-group li:nth-child(1) .indicator,
-  #carousel-2:checked ~ .indicator-group li:nth-child(2) .indicator,
-  #carousel-3:checked ~ .indicator-group li:nth-child(3) .indicator {
+  #Xcarousel-1:checked ~ .indicator-group li:nth-child(1) .indicator,
+  #Xcarousel-2:checked ~ .indicator-group li:nth-child(2) .indicator,
+  #Xcarousel-3:checked ~ .indicator-group li:nth-child(3) .indicator {
     background: @dark;
     transition: @transition-slow;
     width: 3rem;
@@ -94,4 +94,54 @@
 
 .type2 {
   height: 600px;
+}
+
+.j-XXcarousel {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  input:checked + .carousel-item {
+    position: static;
+    opacity: 1;
+  }
+
+  .carousel-item {
+    position: absolute;
+    opacity: 0;
+  }
+
+  label {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 45px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    text-align: center;
+  }
+
+  .prev {
+    left: 2%;
+  }
+  .next {
+    right: 2%;
+  }
+
+  #XXcarousel-1:checked ~ .control-1,
+  #XXcarousel-2:checked ~ .control-2,
+  #XXcarousel-3:checked ~ .control-3,
+  #XXcarousel-4:checked ~ .control-4 {
+    display: block;
+  }
 }
